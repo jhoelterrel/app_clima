@@ -1,0 +1,38 @@
+
+
+.loader {
+    width: 180px;
+    height: 140px;
+    display: block;
+    margin: 0 auto 20px;
+    background-image: radial-gradient(circle 25px at 25px 25px, #d6f32f 100%, transparent 0), radial-gradient(circle 50px at 50px 50px, #2756bd 100%, transparent 0), radial-gradient(circle 25px at 25px 25px, #a628c5 100%, transparent 0), radial-gradient(circle 15px at 15px 15px, #8b52e7 100%, transparent 0), linear-gradient(#1b1ec2 50px, transparent 0);
+    background-size: 50px 50px, 100px 75px, 50px 50px, 30px 32px, 136px 20px;
+    background-repeat: no-repeat;
+    background-position: 0px 30px, 30px 0px, 113px 29px, 147px 50px, 23px 60px;
+    position: relative;
+    top:300px;
+    box-sizing: border-box;
+  }
+  .loader::after {
+    content: '';  
+    position: absolute;
+    left: 2px;
+    top: 70px;
+    width: 2px;
+    height: 6px;
+    color: #291515;
+    box-sizing: border-box;
+    animation: animloader 0.6s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      box-shadow: 25px 0 rgb(46, 25, 163), 50px 0 rgb(196, 67, 163), 75px 0 rgb(70, 138, 90), 100px 0 rgb(145, 118, 118), 125px 0 rgb(31, 22, 22), 150px 0 rgb(168, 131, 131), 25px 0 rgb(105, 35, 35), 50px 0 rgb(109, 166, 199), 75px 0 rgb(32, 30, 172), 100px 0 rgb(29, 66, 136), 125px 0 rgb(196, 112, 112), 150px 0 rgb(69, 211, 124);
+    }
+    50% {
+      box-shadow: 25px 20px rgb(38, 91, 170), 50px 60px rgba(255, 255, 255, 0), 75px 30px rgba(255, 255, 255, 0), 100px 70px rgba(255, 255, 255, 0), 125px 40px white, 150px 60px rgba(255, 255, 255, 0), 25px 20px white, 50px 30px white, 75px 10px white, 100px 30px white, 125px 30px rgba(255, 255, 255, 0), 150px 30px rgba(255, 255, 255, 0);
+    }
+    100% {
+      box-shadow: 25px 60px rgba(255, 255, 255, 0), 50px 60px rgba(255, 255, 255, 0), 75px 50px rgba(255, 255, 255, 0), 100px 70px rgba(255, 255, 255, 0), 125px 70px rgba(255, 255, 255, 0), 150px 60px rgba(255, 255, 255, 0), 25px 80px rgba(255, 255, 255, 0), 50px 80px rgba(255, 255, 255, 0), 75px 70px rgba(255, 255, 255, 0), 100px 60px rgba(255, 255, 255, 0), 125px 30px rgba(255, 255, 255, 0), 150px 30px rgba(255, 255, 255, 0);
+    }
+  }
